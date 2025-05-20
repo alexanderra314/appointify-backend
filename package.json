@@ -1,0 +1,40 @@
+{
+  "name": "appointify-backend",
+  "version": "1.0.0",
+  "description": "Backend for Appointify application",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "migration:generate": "sequelize-cli migration:generate --name",
+    "migration:run": "sequelize-cli db:migrate",
+    "migration:undo": "sequelize-cli db:migrate:undo",
+    "migration:undo:all": "sequelize-cli db:migrate:undo:all",
+    "seed:generate": "sequelize-cli seed:generate --name",
+    "seed:run": "sequelize-cli db:seed:all",
+    "seed:undo": "sequelize-cli db:seed:undo",
+    "seed:undo:all": "sequelize-cli db:seed:undo:all"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.33.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "redis": "^4.6.10",
+    "nodemailer": "^6.9.5",
+    "@googlemaps/google-maps-services-js": "^3.3.41",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.9.0",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.4",
+    "sequelize-cli": "^6.6.1"
+  }
+} 
